@@ -1,7 +1,7 @@
 import pandas as pd
 def load_data(path):
     print("Loading data...")
-    df = pd.read_csv(path)
+    df = pd.read_csv(path, sep='\t')
     print("Data loaded successfully")
     print("First few rows:")
     print(df.head())
